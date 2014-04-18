@@ -43,8 +43,28 @@
 
     <div class='fixed-nav'>
     	{{#if @blog.logo}}<a class="blog-logo-left" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Logo" /></a>{{/if}}
-<hr>
     {{! Footer Social Menu }}
+    
+    <h5 style="
+    color: white;
+    text-align: center;
+    font-size: 1.9rem; 
+    line-height: 1.5em; 
+    font-weight: 400;  letter-spacing: 0;
+    font-family: 'Open Sans', sans-serif;
+">Miguel Nieva</h5>
+<h2 style=" 
+    font-size: 1.3rem; 
+    line-height: 2.9em; font-weight: 300; font-family: 'Roboto Slab', serif; 
+    letter-spacing: 0;
+    color: white;
+    text-align: center;
+">Web Dev / Tech-Entrepreneur</h2>        
+
+<a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/getting-started">Emprendimientos</a>
+<a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/getting-started">Viajes</a>
+<a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/getting-started">Viajes</a>
+
     <div class="footer-social-menu">
     	<div class="footer-social-icons">
     	    <a href="http://www.facebook.com/mike.nieva" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
@@ -54,10 +74,11 @@
             <a href="{{@blog.url}}/rss"><i class="fa fa-rss fa-2x"></i></a>
     	</div> 
 	</div>
-
+    
     </div>
 
-    {{! Each post will be output using this markup }}
+
+
     {{#foreach posts}}
     <div class='post-holder'>
         
@@ -77,7 +98,6 @@
          </header>
 
         	<section class="post-excerpt">
-            <div class="excerpt-image">{{content words="0"}}</div>
             <p>{{excerpt}} <a href="{{url}}" class="read-more">Leer más...</a></p>
        	 </section>
 

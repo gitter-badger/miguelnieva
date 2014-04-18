@@ -224,7 +224,7 @@ button a {
 a.btn {
     
     text-decoration: none;
-    background-color: #86c440;
+    background-color: #C40A19;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     color: white;
@@ -244,7 +244,7 @@ a.btn {
 }
 
 a.btn:hover {
-    background: #9fd067;
+    background: #000000;
 }
 
 
@@ -729,7 +729,7 @@ color: #fff;
     font-size: 1.5rem;
     line-height: 130%;
     font-weight: bold;
-    background-color: #242424;
+    background-color: #000000;
 }
 
 .post-fixed-nav {
@@ -745,13 +745,13 @@ color: #fff;
     font-size: 1.5rem;
     line-height: 130%;
     font-weight: bold;
-    background-color: #242424;
+    background-color: #000000;
 }
 
 .footer-social-menu {
     width: 280px;
     padding: 3rem 0;
-    background-color: #1c2024;
+    background-color: #000000;
     border-bottom: 3px solid #7C8188;
     position: fixed;
     bottom: 0;
