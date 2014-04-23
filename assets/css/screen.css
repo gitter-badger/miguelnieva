@@ -224,10 +224,10 @@ button a {
 a.btn {
     
     text-decoration: none;
-    background-color: #C40A19;
+    background-color: #ECE5E5;
     border-radius: 6px;
     -webkit-border-radius: 6px;
-    color: white;
+    color: rgb(54, 11, 11);
     display: inline-block;
     font-size: 16px;
     letter-spacing: 1px;
@@ -244,7 +244,7 @@ a.btn {
 }
 
 a.btn:hover {
-    background: #000000;
+    background: #BCBFC2;
 }
 
 
@@ -925,7 +925,7 @@ a.fn-item.active {
 
 .read-more:hover {
     border-color: #343434;
-    color: #E64946;
+    color: #000000;
     background-color: #fff;
 }
 
