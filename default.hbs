@@ -31,7 +31,7 @@
     if (document.URL.slice(0,-1) == "{{@blog.url}}") {
          document.write('<meta property="og:title" content="Miguel Nieva - Web Developer / Tech-Entrepreneur"><meta property="og:image" content="{{@blog.logo}}"><meta property="og:site_name" content="Miguel Nieva"><meta property="og:description" content="Genero reflexiones de negocios, startups y emprendimientos digitales. Respiro y desarrollo tecnología web.">')
     }else{
-        document.write('<meta property="og:title" content="{{meta_title}} - Miguel Nieva"><meta property="og:image" content="{{@blog.logo}}"><meta property="og:site_name" content="Miguel Nieva"><meta property="og:description" content="{{excerpt}}">')
+        document.write('{{#post}}<meta property="og:title" content="{{{title}}} - Miguel Nieva"><meta property="og:site_name" content="Miguel Nieva"><meta property="og:description" content="{{content}}">{{/post}}')
     }
 
     </script>
