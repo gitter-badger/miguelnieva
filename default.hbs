@@ -10,8 +10,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     {{! Page Meta }}
-    <title>{{meta_title}} - Miguel Nieva</title>
-    <meta name="description" content="{{meta_description}}" />
+    <script type="text/javascript">
+        if (document.URL.slice(0,-1) == "{{@blog.url}}") {
+            document.write('<title>Miguel Nieva - Web Developer / Tech-Entrepreneur</title><meta name="description" content="Reflexiones, ideas y opiniones sobre el ámbito del emprendimiento web." />');
+        }else{
+            document.write('<title>{{meta_title}} - Miguel Nieva</title><meta name="description" content="{{meta_description}}" />');
+        }
+        </script>    
+    
 
 <!-- Mobile Specific Metas
  ================================================== --> 

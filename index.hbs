@@ -30,7 +30,7 @@
 
         </div> <!-- Social Icons End -->
 
-            <a class='btn first'>Emprendimientos / Liderazgo / Management &nbsp; &nbsp;<span><i class="fa fa-caret-down"></i></span></a>
+            <a class='btn first'>#ideas &nbsp; &nbsp;<span><i class="fa fa-caret-down"></i></span></a>
             
         </div>
     </div>
@@ -60,9 +60,10 @@
     text-align: center;
 ">Web Dev / Tech-Entrepreneur</h2>        
 
-<a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/emprendimientos">Emprendimientos</a>
+<a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/emprendimientos">Emprendimiento</a>
 <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/liderazgo">Liderazgo</a>
 <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/management">Management</a>
+<a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/viajes">Viajes</a>
 
     <div class="footer-social-menu">
     	<div class="footer-social-icons">
@@ -75,8 +76,6 @@
 	</div>
     
     </div>
-
-
 
     {{#foreach posts}}
     <div class='post-holder'>
@@ -97,7 +96,7 @@
          </header>
 
         	<section class="post-excerpt">
-            <p>{{excerpt}} <a href="{{url}}" class="read-more">Leer más...</a></p>
+            <p>{{excerpt characters="140"}} ... <a href="{{url}}" class="read-more">Leer más...</a></p>
        	 </section>
 
         </article>

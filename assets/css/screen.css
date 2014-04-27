@@ -99,7 +99,7 @@ body {
     max-height: 100%;
     font-family: 'Open Sans', serif;
     font-size: 2.0rem;
-    line-height: 2em;
+    line-height: 2.3em;
     color: #3A4145;
     background-color: #343434;
     font-weight: 200;
@@ -149,6 +149,13 @@ article.post h1, article.post h2, article.post h3, article.post h4, article.post
     font-family: 'Open Sans', sans-serif;
     color: #166A87;
     font-weight: 100;
+}
+
+article.post section.post-content h2, article.post section.post-content h3, article.post section.post-content h4
+{
+    margin: 61px 0;
+    font-weight: 100;
+    font-size: 2.5rem;
 }
 
 h1 {
