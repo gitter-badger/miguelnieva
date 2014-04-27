@@ -14,7 +14,7 @@
         if (document.URL.slice(0,-1) == "{{@blog.url}}") {
             document.write('<title>Miguel Nieva - Web Developer / Tech-Entrepreneur</title><meta name="description" content="Reflexiones, ideas y opiniones sobre el ámbito del emprendimiento web." />');
         }else{
-            document.write('<title>{{meta_title}} - Miguel Nieva</title><meta name="description" content="{{excerpt}}" />');
+            document.write('<title>{{meta_title}} - Miguel Nieva</title><meta name="description" content="{{content}}" />');
         }
         </script>    
     
@@ -27,14 +27,7 @@
     <meta name="viewport" content="user-scalable=0,width=device-width,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <script type="text/javascript">
-    if (document.URL.slice(0,-1) == "{{@blog.url}}") {
-         document.write('<meta property="og:title" content="Miguel Nieva - Web Developer / Tech-Entrepreneur"><meta property="og:image" content="{{@blog.logo}}"><meta property="og:site_name" content="Miguel Nieva"><meta property="og:description" content="Genero reflexiones de negocios, startups y emprendimientos digitales. Respiro y desarrollo tecnología web.">')
-    }else{
-        document.write('{{#post}}<meta property="og:title" content="{{{title}}} - Miguel Nieva"><meta property="og:site_name" content="Miguel Nieva"><meta property="og:description" content="{{content}}">{{/post}}')
-    }
-
-    </script>
+    {{{block "meta"}}}
 
 <!-- Favicons
   ================================================== -->
