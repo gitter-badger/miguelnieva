@@ -766,7 +766,7 @@ color: #fff;
 }
 
 .footer-social-icons {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -1030,6 +1030,22 @@ a.fn-item.active {
     color: #50585D;
 }
 
+div.block-socialbuttons
+{
+    margin: 2em 0 0;
+}
+
+div.socialbutton
+{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 0;
+    font-size: 0;
+    width: 105px;
+}
+
+
+
 
 /* ==========================================================================
    6. Third Party Elements - Embeds from other services
@@ -1210,7 +1226,7 @@ a.fn-item.active {
 
     .post {
         font-size: 0.9em;
-        line-height: 1.6em;
+        line-height: 2.6em;
     }
 
     .post-template .post {
@@ -1279,16 +1295,17 @@ a.fn-item.active {
         display: block;
         color: #E64946;
         width: 80%;
-        margin: 5px auto;    
+        margin: 17px auto 0;
     }
 
     .back-to-home h5 {
         text-align: center;
-        color: #eee;        
+        color: white;
         margin-left: 10px;
-        font-size: 4rem;
         display: inline-block;
         text-transform: uppercase;
+        font-size: 1.3em;
+        vertical-align: top;
     }
 
 }
@@ -1310,21 +1327,7 @@ a.fn-item.active {
 
     }
 
-    .back-to-home {
-        display: block;
-        color: #E64946;
-        width: 90%;
-        margin: 5px auto;    
-    }
 
-    .back-to-home h5 {
-        text-align: center;
-        color: #eee;        
-        margin-left: 10px;
-        font-size: 4rem;
-        display: inline-block;
-         text-transform: uppercase;
-    }
 
     .post-holder {
         padding-top: 20px;
@@ -1360,7 +1363,7 @@ a.fn-item.active {
         margin-left: 16px;
         margin-right: 16px;
         font-size: 0.8em;
-        line-height: 1.6em;
+        line-height: 2.6em;
     }
 
     #site-head {        
@@ -1499,13 +1502,6 @@ a.fn-item.active {
   height: 40px;
 }
 
-.back-to-home h5 {
-  font-size: 3rem;
-}
-
-.back-to-home i {
-    font-size: 3rem;
-}
 
   #site-head {        
         height: 100%;
