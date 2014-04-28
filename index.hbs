@@ -42,7 +42,8 @@
 
         </div> <!-- Social Icons End -->
 
-            <a class='btn first'>#ideas &nbsp; &nbsp;<span><i class="fa fa-caret-down"></i></span></a>
+            <a class="btn first">ideas &nbsp; &nbsp;<span><i class="fa fa-caret-down"></i></span></a>
+
             
         </div>
     </div>
@@ -56,26 +57,15 @@
     	{{#if @blog.logo}}<a class="blog-logo-left" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Logo" /></a>{{/if}}
     {{! Footer Social Menu }}
     
-    <h5 style="
-    color: white;
-    text-align: center;
-    font-size: 1.9rem; 
-    line-height: 1.5em; 
-    font-weight: 400;  letter-spacing: 0;
-    font-family: 'Open Sans', sans-serif;
-">Miguel Nieva</h5>
-<h2 style=" 
-    font-size: 1.3rem; 
-    line-height: 2.9em; font-weight: 300; font-family: 'Roboto Slab', serif; 
-    letter-spacing: 0;
-    color: white;
-    text-align: center;
-">Web Dev / Tech-Entrepreneur</h2>        
+    <h5>Miguel Nieva</h5>
+    <h2>Web Dev / Tech-Entrepreneur</h2>        
 
-<a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/emprendimientos">Emprendimiento</a>
-<a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/liderazgo">Liderazgo</a>
-<a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/management">Management</a>
-<a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/viajes">Viajes</a>
+    <div class="tags">
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/liderazgo"><span class="glyphicon glyphicon-fire">&nbsp;&nbsp;</span>Liderazgo</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/management"><span class="glyphicon glyphicon-tasks">&nbsp;&nbsp;</span>Management</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/viajes-y-experiencias"><span class="glyphicon glyphicon-plane">&nbsp;&nbsp;</span>Viajes y Experiencias</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/web"><span class="glyphicon glyphicon-globe">&nbsp;&nbsp;</span>Web</a>
+    </div>
 
     <div class="footer-social-menu">
     	<div class="footer-social-icons">

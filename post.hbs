@@ -19,21 +19,8 @@
 
     <div class='post-fixed-nav'>
     	{{#if @blog.logo}}<a class="blog-logo-left" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Logo" /></a>{{/if}}
-    <h5 style="
-    color: white;
-    text-align: center;
-    font-size: 1.9rem; 
-    line-height: 1.5em; 
-    font-weight: 400;  letter-spacing: 0;
-    font-family: 'Open Sans', sans-serif;
-">Miguel Nieva</h5>
-<h2 style=" 
-    font-size: 1.3rem; 
-    line-height: 2.9em; font-weight: 300; font-family: 'Roboto Slab', serif; 
-    letter-spacing: 0;
-    color: white;
-    text-align: center;
-">Web Dev / Tech-Entrepreneur</h2>        
+    <h5>Miguel Nieva</h5>
+    <h2>Web Dev / Tech-Entrepreneur</h2>        
     <div class="footer-social-menu">
         <div class="footer-social-icons">
             <a href="http://facebook.com/mike.nieva" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
@@ -61,8 +48,11 @@
             
         {{! Everything inside the #post tags pulls data from the post }}
 
-        <article class="{{post_class}}">  
+        <article class="{{post_class}}" style="padding-top: 30px;">  
         {{#post}}
+
+        {{! Información sobre Post para el loop }}
+
               {{#contentFor "meta"}}
                     <meta property="og:type" content="article" />
                     <meta property="og:url" content="{{url absolute="true"}}" />
@@ -76,8 +66,64 @@
                     <meta property="fb:admins" content="10151083850065357" />
                 {{/contentFor}}
 
+        
          <header>                
-                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                <nav class="navbar navbar-default" role="navigation" style="
+        background: #f2efe8;
+        margin: 0 0 60px;
+        padding-bottom: 15px;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #B5B9BA;
+">
+  <div class="container-fluid" style="padding:0">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="text-align: center; width: auto; background-color: rgb(242, 239, 232); padding: 0px; margin: 0px; height: 1px;">
+      <ul class="nav navbar-nav navbar-left" style="
+    text-align: center;
+    background: #f2efe8;
+    width: 100%;
+">
+
+  <li style="
+    font-size: 16px;
+    padding-left: 0;
+    margin-left: 0;
+"><a href="{{@blog.url}}/tag/liderazgo" style="
+    padding-left: 0;
+"><span class="glyphicon glyphicon-fire"></span>&nbsp;&nbsp;Liderazgo</a></li>
+  <li style="
+    font-size: 16px;
+    margin: 0;
+">
+<a href="{{@blog.url}}/tag/management"><span class="glyphicon glyphicon-tasks"></span>&nbsp;&nbsp;Management</a></li>
+  <li style="
+    font-size: 16px;
+    margin: 0;
+"><a href="{{@blog.url}}/tag/viajes-y-experiencias"><span class="glyphicon glyphicon-plane"></span>&nbsp;&nbsp;Experiencias</a></li>
+<li style="
+    font-size: 16px;
+    margin: 0;
+"><a href="{{@blog.url}}/tag/web"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;Web</a></li>
+  
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+                <h2 class="post-title" style="
+    margin-bottom: 10px;
+"><a href="{{url}}">{{{title}}}</a></h2>
                 <div class="post-meta"><i class="fa fa fa-calendar"></i>  <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}} </time> &nbsp; &nbsp; {{#if tags}} <span class="post-tags "> <i class="fa fa-tags"></i> {{tags separator=" | "}} {{/if}}</span> </div>
          </header>
 

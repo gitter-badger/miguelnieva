@@ -1,9 +1,9 @@
 
 /******************************************/   
-/*    Theme   : Phantom                      */
-/*    Version : 1.0                       */
-/*    Author  : Codetic                   */
-/*    Website : http://www.codetic.net    */ 
+/*    Theme   : Phantom +                                                                                */
+/*    Version : 1.0                                                                                             */
+/*    Author  : Codetic + Updated by Miguel Nieva for this project                   */
+/*    Website : http://www.codetic.net                                                             */ 
 /******************************************/  
 
 
@@ -781,10 +781,9 @@ color: #fff;
 }
 
 a.fn-item {
-    color: #7C8188;;
+    color: #E2E9F1;
     display: block;
     cursor: pointer;
-    opacity: 0.7;
     margin: 20px 0  0 20px;
 }
 .white {
@@ -1032,7 +1031,7 @@ a.fn-item.active {
 
 div.block-socialbuttons
 {
-    margin: 2em 0 0;
+    margin: 1em 0 0;
 }
 
 div.socialbutton
@@ -1136,6 +1135,31 @@ div.socialbutton
     display: none;
 }
 
+.fixed-nav h2
+{
+    font-size: 1.3rem; 
+    line-height: 2.9em; font-weight: 300; font-family: 'Roboto Slab', serif; 
+    letter-spacing: 0;
+    color: white;
+    text-align: center;
+}
+
+.fixed-nav h5
+{
+     color: white;
+    text-align: center;
+    font-size: 1.9rem; 
+    line-height: 1.5em; 
+    font-weight: 400;  letter-spacing: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+div.tags
+{
+    margin-top: 60px;
+}
+
 /* ==========================================================================
    8. Footer - The bottom of every page
    ========================================================================== */
@@ -1187,6 +1211,25 @@ div.socialbutton
 
 .go-top:hover {
    color: #E64946!important; 
+}
+
+.post-fixed-nav h2
+{
+    font-size: 1.3rem; 
+    line-height: 2.9em; font-weight: 300; font-family: 'Roboto Slab', serif; 
+    letter-spacing: 0;
+    color: white;
+    text-align: center;
+}
+
+.post-fixed-nav h5
+{
+    color: white;
+    text-align: center;
+    font-size: 1.9rem; 
+    line-height: 1.5em; 
+    font-weight: 400;  letter-spacing: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
