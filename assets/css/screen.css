@@ -195,7 +195,8 @@ a {
     -o-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
     transition: all ease 0.3s;
-
+    color: #428bca;
+    text-decoration: underline;
 }
 
 a:hover {
