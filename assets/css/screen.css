@@ -962,12 +962,6 @@ a.fn-item.active {
     margin: 0 auto;
 }
 
-.post-content a
-{
-    color: #428bca;
-    text-decoration: underline;
-}
-
 .post-sidebar {
     width: 90%;
     margin: 20px auto;
@@ -978,8 +972,6 @@ a.fn-item.active {
 /* The author credit area after the post */
 .post-footer {
     position: relative;
-    margin: 4rem 0 0 0;
-    padding: 4rem 0 0 0;
     border-top: #EBF2F6 1px solid;
 }
 
@@ -1047,6 +1039,17 @@ div.socialbutton
     width: 105px;
 }
 
+
+
+.navegacion
+{
+    background: #f2efe8;
+    margin: 0 0 60px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #B5B9BA;
+}
 
 
 
