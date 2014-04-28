@@ -195,8 +195,6 @@ a {
     -o-transition: all ease 0.3s;
     -ms-transition: all ease 0.3s;
     transition: all ease 0.3s;
-    color: #428bca;
-    text-decoration: underline;
 }
 
 a:hover {
@@ -964,6 +962,11 @@ a.fn-item.active {
     margin: 0 auto;
 }
 
+.post-content a
+{
+    color: #428bca;
+    text-decoration: underline;
+}
 
 .post-sidebar {
     width: 90%;
