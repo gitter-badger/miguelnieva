@@ -230,10 +230,10 @@ button a {
 a.btn {
     
     text-decoration: none;
-    background-color: #ECE5E5;
+    background-color: #E64946;
     border-radius: 6px;
     -webkit-border-radius: 6px;
-    color: rgb(54, 11, 11);
+    color: white;
     display: inline-block;
     font-size: 16px;
     letter-spacing: 1px;
