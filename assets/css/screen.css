@@ -962,6 +962,12 @@ a.fn-item.active {
     margin: 0 auto;
 }
 
+.post-content a
+{
+    color: #166A87;
+    text-decoration: underline;
+}
+
 .post-sidebar {
     width: 90%;
     margin: 20px auto;
