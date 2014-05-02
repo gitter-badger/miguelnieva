@@ -955,6 +955,11 @@ a.fn-item.active {
     padding: 60px 0;
 }
 
+.post-content
+{
+    text-align: justify;
+}
+
 /* Keep large images within the bounds of the post-width */
 .post-content img {
     display: block;
