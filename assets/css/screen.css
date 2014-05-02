@@ -1245,6 +1245,10 @@ div.tags
     font-family: 'Open Sans', sans-serif;
 }
 
+#disqus_thread { 
+font-family: 'Open Sans';
+}
+
 
 /* ==========================================================================
    9. Media Queries - Smaller than 1130px
