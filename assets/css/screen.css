@@ -964,7 +964,7 @@ a.fn-item.active {
 .post-content img {
     display: block;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 50px ;
 }
 
 .post-content a
