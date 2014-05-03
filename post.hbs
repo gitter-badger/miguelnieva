@@ -52,8 +52,7 @@
         {{#post}}
 
         {{! Información sobre Post para el loop }}
-
-              {{#contentFor "meta"}}
+        {{#contentFor "meta"}}
                     <meta property="og:type" content="article" />
                     <meta property="og:url" content="{{url absolute="true"}}" />
                     <meta property="og:title" content="{{title}} - Miguel Nieva" />
@@ -64,7 +63,10 @@
                     <meta property="article:tag" content="{{name}}" />{{/foreach}}
                     <meta property="fb:profile_id" content="mikenieva" />
                     <meta property="fb:admins" content="mikenieva" />
-                {{/contentFor}}
+        {{/contentFor}}
+              
+
+
 
         
          <header>                
@@ -157,7 +159,6 @@
                 {{content}}
             </section>
 
-
             <footer class="post-footer">
 
 
@@ -179,7 +180,10 @@
                         <a href="http://disqus.com" class="dsq-brlink">Leave a Reply <span class="logo-disqus"></span></a>
                     </section> <!-- Discuss Comment End -->
 
+            
             </footer>
+
+                    
             {{/post}}
     
         </article>        
