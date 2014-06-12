@@ -143,7 +143,7 @@ h3, h4, h5, h6 {
 article.post h1, article.post h2, article.post h3, article.post h4, article.post h5
 {
     text-rendering: optimizeLegibility;
-    line-height: 1;
+    line-height: 1.4;
     margin-top: 0;
     margin-bottom: 10px;
     font-family: 'Open Sans', sans-serif;
