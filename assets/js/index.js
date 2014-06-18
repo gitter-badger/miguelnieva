@@ -37,6 +37,7 @@ var $post = $('.post'),
 
         })
         
+/*
 
         $('.btn.first').click( function () {
             srcTo ($first)
@@ -48,7 +49,7 @@ var $post = $('.post'),
             srcTo ($first)
         })
 
-/*
+
         $('.post-title').each(function () {
             var t = $(this).text(),
                 index = $(this).parents('.post-holder').index();
