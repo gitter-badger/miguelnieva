@@ -236,14 +236,13 @@ button a {
 a.btn {
     
     text-decoration: none;
-    background-color: #E64946;
+    background-color: #166A87;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     color: white;
     display: inline-block;
     font-size: 16px;
     letter-spacing: 1px;
-    margin: 0;
     overflow: visible;
     padding: 10px 20px 10px 20px;
     position: relative;
@@ -252,7 +251,7 @@ a.btn {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
-
+    margin: 4rem .3em 0 .3em;
 }
 
 a.btn:hover {
@@ -937,6 +936,23 @@ a.fn-item.active {
     border-color: #343434;
     color: #000000;
     background-color: #fff;
+}
+
+.categorias a
+{
+    width: 180px;
+}
+
+.categorias .botonuno
+{
+    margin: .3em;
+}
+
+.categorias .botones
+{
+    display: inline-block;
+    margin: 0em;
+    padding: 0;
 }
 
 /* ==========================================================================
