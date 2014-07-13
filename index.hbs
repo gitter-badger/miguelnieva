@@ -3,10 +3,10 @@
 {{#contentFor "meta"}}
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{@blog.url}}" />
-    <meta property="og:title" content="Miguel Nieva - Web Developer / Tech-Entrepreneur" />
+    <meta property="og:title" content="Miguel Nieva - Business Developer" />
     <meta property="og:site_name" content="{{@blog.title}}" />
     {{#if @blog.logo}}<meta property="og:image" content="{{@blog.url}}{{@blog.logo}}" />{{/if}}
-    <meta property="og:description" content="Reflexiones, ideas y opiniones sobre el ámbito del liderazgo, comunidades y emprendimiento web."/>
+    <meta property="og:description" content="Charlamos fundamentos e ideas sobre desarrollo de negocios."/>
     <meta property="fb:profile_id" content="mikenieva" />
     <meta property="fb:admins" content="mikenieva" />
 {{/contentFor}}
@@ -16,45 +16,46 @@
     the {body} of the default.hbs template, which contains our header/footer. }}
 
 {{! The big featured header on the homepage, with the site logo and description }}
-<header id="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}> 
+<header id="site-head" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
         <div id="top" class="vertical">
         <div id="site-head-content" class="inner">
             {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
             <h1 class="blog-title">{{@blog.title}}</h1>
             <h2 class="blog-description">{{@blog.description}}</h2>
 
-        
+
 
         {{! Social Icons}}
         <div class="blog-description social-icons">
             <a href="http://facebook.com/miguelnieva.com" target="_blank"><img src="/assets/images/facebook.png"></a>
-            <a href="http://twitter.com/mikenieva" target="_blank"><img src="/assets/images/twitter.png"></a>            
-            <a href="http://linkedin.com/in/miguelnieva/es" target="_blank"><img src="/assets/images/linkedin.png"></a>  
-            <a href="http://google.com/+miguelnieva" target="_blank"><img src="/assets/images/google-plus.png"></a>	
-            <a href="http://github.com/miguelnieva" target="_blank"><img src="/assets/images/github.png"></a>  
-            <a href="http://instagram.com/mikenieva" target="_blank"><img src="/assets/images/instagram.png"></a>  
+            <a href="http://twitter.com/mikenieva" target="_blank"><img src="/assets/images/twitter.png"></a>
+            <a href="http://linkedin.com/in/miguelnieva/es" target="_blank"><img src="/assets/images/linkedin.png"></a>
+            <a href="http://google.com/+miguelnieva" target="_blank"><img src="/assets/images/google-plus.png"></a>
+            <a href="http://github.com/miguelnieva" target="_blank"><img src="/assets/images/github.png"></a>
+            <a href="http://instagram.com/mikenieva" target="_blank"><img src="/assets/images/instagram.png"></a>
 
         </div> <!-- Social Icons End -->
 
         <div class="blog-description social-icons social-icons-bottom">
             <a href="http://conexionew.com" target="_blank"><img src="/assets/images/conexionweb.png"></a>
-            <a href="http://cursos.mejorando.la" target="_blank"><img src="/assets/images/mejorandola.png"></a>            
+            <a href="http://cursos.mejorando.la" target="_blank"><img src="/assets/images/mejorandola.png"></a>
 
         </div> <!-- Social Icons End -->
 
         <div class="categorias">
             <div class="boton-uno botones">
-                <a class="btn first" href="{{@blog.url}}/tag/liderazgo"><span class="glyphicon glyphicon-fire">&nbsp;</span>Liderazgo</a>
+                <a class="btn first" href="{{@blog.url}}/tag/lidere"><span class="glyphicon glyphicon-fire">&nbsp;</span>Lidere</a>
             </div>
             <div class="botones">
-                <a class="btn first" href="{{@blog.url}}/tag/management"><span class="glyphicon glyphicon-tasks">&nbsp;</span>Management</a>
+                <a class="btn first" href="{{@blog.url}}/tag/administre"><span class="glyphicon glyphicon-tasks">&nbsp;</span>Administre</a>
             </div>
             <div class="botones">
-                <a class="btn first" href="{{@blog.url}}/tag/viajes-y-experiencias"><span class="glyphicon glyphicon-plane">&nbsp;</span>Experiencias</a>
+                <a class="btn first" href="{{@blog.url}}/tag/venda"><span class="glyphicon glyphicon-heart-empty">&nbsp;</span>Venda</a>
+            </div>
+            <div class="botones">
+                <a class="btn first" href="{{@blog.url}}/tag/reclute"><span class="glyphicon glyphicon-user">&nbsp;</span>Reclute</a>
             </div>
         </div>
-
-            
         </div>
     </div>
 
@@ -66,14 +67,15 @@
     <div class='fixed-nav'>
     	{{#if @blog.logo}}<a class="blog-logo-left" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Logo" /></a>{{/if}}
     {{! Footer Social Menu }}
-    
+
     <h5>Miguel Nieva</h5>
-    <h2>Tech-Entrepreneur</h2>        
+    <h2>Business Developers</h2>
 
     <div class="tags">
-        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/liderazgo"><span class="glyphicon glyphicon-fire">&nbsp;&nbsp;</span>Liderazgo</a>
-        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/management"><span class="glyphicon glyphicon-tasks">&nbsp;&nbsp;</span>Management</a>
-        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/viajes-y-experiencias"><span class="glyphicon glyphicon-plane">&nbsp;&nbsp;</span>Experiencias</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/lidere"><span class="glyphicon glyphicon-fire">&nbsp;&nbsp;</span>Lidere</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/administre"><span class="glyphicon glyphicon-tasks">&nbsp;&nbsp;</span>Organice</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/venda"><span class="glyphicon glyphicon-heart-empty">&nbsp;&nbsp;</span>Venda</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/reclute"><span class="glyphicon glyphicon-user">&nbsp;&nbsp;</span>Reclute</a>
     </div>
 
     <div class="footer-social-menu">
@@ -84,14 +86,14 @@
                 <a href="http://plus.google.com/+MiguelNieva" rel=”author” target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
                 <a href="http://instagram.com/mikenieva" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
                 <a href="http://mx.linkedin.com/in/miguelnieva/es" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-    	</div> 
+    	</div>
 	</div>
-    
+
     </div>
 
     {{#foreach posts}}
     <div class='post-holder'>
-        
+
             {{#if @first}}
                 <article class="{{post_class}} first">
             {{else}}
@@ -101,8 +103,8 @@
                     <article class="{{post_class}}">
                 {{/if}}
             {{/if}}
-        
-         <header class="post-header">                
+
+         <header class="post-header">
                 <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
                 <div class="post-meta"><i class="fa fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}} </time>&nbsp;&nbsp;&nbsp; {{#if tags}} <span class="post-tags "> <i class="fa fa-tags"></i> {{tags separator=" | "}} {{/if}}</span> </div>
          </header>
@@ -118,7 +120,7 @@
     {{/foreach}}
 
     {{!! After all the posts, we have the previous/next pagination links }}
-    
+
     {{pagination}}
 
 </main>
