@@ -24,9 +24,9 @@
             
         </div> <!-- Small Screen Navigation End -->
 
-    <div class='post-fixed-nav'>
+   <div class='post-fixed-nav'>
         {{#if @blog.logo}}<a class="blog-logo-left" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Logo" /></a>{{/if}}
-    <h5 style="
+        <h5 style="
     color: white;
     text-align: center;
     font-size: 1.9rem; 
@@ -40,10 +40,29 @@
     letter-spacing: 0;
     color: white;
     text-align: center;
-">Business Developers</h2>        
-    <div class="footer-social-menu">
+">Business Developers</h2>     
+        <hr>
+        <div class="post-sidebar">
+
+
+        
+
+    <div class="tags">
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/lidere"><span class="glyphicon glyphicon-fire">&nbsp;&nbsp;</span>lidere</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/administre"><span class="glyphicon glyphicon-tasks">&nbsp;&nbsp;</span>Administre</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/venda"><span class="glyphicon glyphicon-heart-empty">&nbsp;&nbsp;</span>Venda</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/forme"><span class="glyphicon glyphicon-user">&nbsp;&nbsp;</span>Forme</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/recomiende"><span class="glyphicon glyphicon-book">&nbsp;&nbsp;</span>Recomiende</a>
+    </div>
+    <hr>
+    <a class="fn-item active" item_index="1" href="{{@blog.url}}/lectores-elite"><span class="glyphicon glyphicon-envelope">&nbsp;&nbsp;</span>Lectores Élite</a>
+
+        </div>
+
+        {{! Social Menu }}
+       <div class="footer-social-menu">
         <div class="footer-social-icons">
-            <a href="http://facebook.com/miguelnieva.com" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+            <a href="http://facebook.com/mike.nieva" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
             <a href="http://twitter.com/mikenieva" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
             <a href="http://github.com/miguelnieva" target="_blank"><i class="fa fa-github fa-2x"></i></a>
             <a href="http://google.com/+miguelnieva?rel=author" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
@@ -51,20 +70,8 @@
             <a href="http://mx.linkedin.com/in/miguelnieva/es" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
         </div> 
     </div>
-        <hr>
-        <div class="post-sidebar">
-
-    <div class="tags">
-        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/lidere"><span class="glyphicon glyphicon-fire">&nbsp;&nbsp;</span>lidere</a>
-        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/administre"><span class="glyphicon glyphicon-tasks">&nbsp;&nbsp;</span>Administre</a>
-        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/venda"><span class="glyphicon glyphicon-heart-empty">&nbsp;&nbsp;</span>Venda</a>
-        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/forme"><span class="glyphicon glyphicon-user">&nbsp;&nbsp;</span>Forme</a>
-    </div>
-
-        </div>
 
     </div>
-
 
     {{! Each post will be output using this markup }}
 

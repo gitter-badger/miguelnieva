@@ -236,7 +236,7 @@ button a {
 a.btn {
     
     text-decoration: none;
-    background-color: #42B5DD;
+    background-color: black;
     border-radius: 6px;
     -webkit-border-radius: 6px;
     color: white;
@@ -826,7 +826,7 @@ a.fn-item.active {
 
 .post-title a {
     text-decoration: none;
-    color: #166A87;
+    color: #1F7999;
 }
 
 .post-title a:hover {
@@ -1076,14 +1076,11 @@ div.socialbutton
 .navegacion
 {
     background: #f2efe8;
-    margin: 0 0 60px;
     padding-bottom: 15px;
     border: none;
     border-radius: 0;
     border-bottom: 1px solid #B5B9BA;
 }
-
-
 
 /* ==========================================================================
    6. Third Party Elements - Embeds from other services
@@ -1193,11 +1190,6 @@ div.socialbutton
     font-family: 'Open Sans', sans-serif;
 }
 
-
-div.tags
-{
-    margin-top: 60px;
-}
 
 /* ==========================================================================
    8. Footer - The bottom of every page
@@ -1347,7 +1339,7 @@ font-family: 'Open Sans';
    ========================================================================== */
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
 
     .fixed-nav {
         display: none;
