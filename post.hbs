@@ -162,7 +162,11 @@ height: 52px;
                 <h2 class="post-title" style="
     margin-bottom: 10px;
 "><a href="{{url}}">{{{title}}}</a></h2>
-                <div class="post-meta"><i class="fa fa fa-calendar"></i>  <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}} </time></div>
+                <div class="post-meta"><i class="fa fa fa-calendar"></i>  
+                    <script type="text/javascript">
+                        document.write('<time datetime="{{date format="YYYY-MM-DD"}}")>&nbsp;&nbsp;' + capitaliseFirstLetter('{{date format="MMMM DD, YYYY"}}') + ' </time>')
+                    </script>
+                </div>
          </header>
 
             <section class="post-content">
