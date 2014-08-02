@@ -15,7 +15,7 @@
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
         if (document.URL.slice(0,-1) == "{{@blog.url}}") {
-            document.write('<title>Miguel Nieva - Business Developer</title><meta name="description" content="Fundamentos e ideas sobre desarrollo de negocios." />');
+            document.write('<title>Miguel Nieva - Business Developer</title>');
         }else{
             document.write('<title>' + capitaliseFirstLetter('{{meta_title}}') + ' - Miguel Nieva </title><meta name="description" content="{{content}}" />');
         }
