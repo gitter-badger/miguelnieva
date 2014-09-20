@@ -145,7 +145,7 @@ article.post h1, article.post h2, article.post h3, article.post h4, article.post
     text-rendering: optimizeLegibility;
     line-height: 1.4;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     font-family: 'Open Sans', sans-serif;
     color: #166A87;
     font-weight: 100;
@@ -241,14 +241,14 @@ a.btn {
     -webkit-border-radius: 6px;
     color: white;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 1px;
     overflow: visible;
     padding: 10px 20px 10px 20px;
     position: relative;
     margin-top: 4rem;
     cursor: pointer;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-weight: lighter;
     margin: 4rem .3em 0 .3em;
@@ -258,11 +258,6 @@ a.btn:hover {
     background: #BCBFC2;
 }
 
-
-h1 a, h2 a, h3 a,
-h4 a, h5 a, h6 a {
-    /*color: #50585D;*/
-}
 
 
 p, ul, ol {
@@ -657,7 +652,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 1.8rem;
     line-height: 1.5em;
     font-weight: 300;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Open Sans', serif;
     letter-spacing: 0;
 }
 
@@ -916,7 +911,7 @@ a.fn-item.active {
 
 .read-more {
     display: block;
-    margin: 15px auto 0 auto;
+    margin: 60px auto 0 auto;
     padding: 3px 20px;
     border: #9EABB3 2px solid;
     text-decoration: none;
@@ -1174,7 +1169,9 @@ div.socialbutton
 .fixed-nav h2
 {
     font-size: 1.3rem; 
-    line-height: 2.9em; font-weight: 300; font-family: 'Roboto Slab', serif; 
+    line-height: 2.9em; 
+    font-weight: 300; 
+    font-family: 'Open Sans', serif; 
     letter-spacing: 0;
     color: white;
     text-align: center;
@@ -1247,7 +1244,7 @@ div.socialbutton
 .post-fixed-nav h2
 {
     font-size: 1.3rem; 
-    line-height: 2.9em; font-weight: 300; font-family: 'Roboto Slab', serif; 
+    line-height: 2.9em; font-weight: 300; font-family: 'Open Sans', serif; 
     letter-spacing: 0;
     color: white;
     text-align: center;
@@ -1456,11 +1453,11 @@ font-family: 'Open Sans';
     }
 
     .vertical{
-        padding-bottom: 20%;
+        padding-bottom: 0%;
     }
 
     a.btn {
-        margin: 25px;
+        margin: 10px;
         padding: 5px 20px;
         font-size: 14px;
     }
