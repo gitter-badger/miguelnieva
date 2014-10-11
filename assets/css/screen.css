@@ -1264,6 +1264,10 @@ div.socialbutton
 font-family: 'Open Sans';
 }
 
+.navbar-default .navbar-nav>li>a {
+color: black;
+}
+
 
 /* ==========================================================================
    9. Media Queries - Smaller than 1130px
