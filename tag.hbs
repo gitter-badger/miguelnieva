@@ -24,30 +24,13 @@
             
         </div> <!-- Small Screen Navigation End -->
 
-   <div class='post-fixed-nav'>
+   <div class='post-fixed-nav nav-tag'>
         {{#if @blog.logo}}<a class="blog-logo-left" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Logo" /></a>{{/if}}
-        <h5 style="
-    color: white;
-    text-align: center;
-    font-size: 1.9rem; 
-    line-height: 1.5em; 
-    font-weight: 400;  letter-spacing: 0;
-    font-family: 'Open Sans', sans-serif;
-">Miguel Nieva</h5>
-<h2 style=" 
-    font-size: 1.3rem; 
-    line-height: 2.9em; font-weight: 300; font-family: 'Roboto Slab', serif; 
-    letter-spacing: 0;
-    color: white;
-    text-align: center;
-">Business Developers</h2>     
+        <h5>Miguel Nieva</h5>
+        <h2>Business Developers</h2>     
         <hr>
         <div class="post-sidebar">
-
-
-        
-
-    <div class="tags">
+            <div class="tags">
         <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/liderar"><span class="glyphicon glyphicon-fire">&nbsp;&nbsp;</span>liderar</a>
         <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/administrar"><span class="glyphicon glyphicon-tasks">&nbsp;&nbsp;</span>Administrar</a>
         <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/negociar"><span class="glyphicon glyphicon-comment">&nbsp;&nbsp;</span>Negociar</a>
@@ -62,12 +45,12 @@
         {{! Social Menu }}
        <div class="footer-social-menu">
         <div class="footer-social-icons">
-            <a href="http://facebook.com/mike.nieva" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+            <a href="http://facebook.com/miguelnieva.com" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
             <a href="http://twitter.com/mikenieva" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-            <a href="http://github.com/miguelnieva" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+            <a href="http://mx.linkedin.com/in/miguelnieva/es" rel=”author” target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
             <a href="http://google.com/+miguelnieva?rel=author" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
-            <a href="http://instagram.com/mikenieva" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-            <a href="http://mx.linkedin.com/in/miguelnieva/es" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="http://github.com/miguelnieva" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+            <a href="http://instagram.com/mikenieva" rel=”author” target="_blank"><i class="fa fa-instagram fa-2x"></i></a>    
         </div> 
     </div>
 
@@ -95,7 +78,7 @@
         
          <header class="post-header">                
                 <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-                <div class="post-meta"><i class="fa fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}} </time>&nbsp;&nbsp;&nbsp; {{#if tags}} <span class="post-tags "> <i class="fa fa-tags"></i> {{tags separator=" | "}} {{/if}}</span> </div>
+                <div class="post-meta"><i class="fa fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}} </time>&nbsp;&nbsp;&nbsp; {{#if tags}} <span class="post-tags "> <i class="fa fa-tags"></i> {{tags separator=" | "}} {{/if}}</span></div>
          </header>
 
             <section class="post-excerpt">

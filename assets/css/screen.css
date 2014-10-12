@@ -753,6 +753,40 @@ color: #fff;
     background-color: #000000;
 }
 
+.nav-page h2 {
+    font-size: 1.3rem; 
+    line-height: 2.9em; font-weight: 300; font-family: 'Roboto Slab', serif; 
+    letter-spacing: 0;
+    color: white;
+    text-align: center;
+}
+
+.nav-page h5 {
+    color: white;
+    text-align: center;
+    font-size: 1.9rem; 
+    line-height: 1.5em; 
+    font-weight: 400;  letter-spacing: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-tag h2{  
+    font-size: 1.3rem; 
+    line-height: 2.9em; font-weight: 300; font-family: 'Roboto Slab', serif; 
+    letter-spacing: 0;
+    color: white;
+    text-align: center;
+}
+
+.nav-tag h5{
+    color: white;
+    text-align: center;
+    font-size: 1.9rem; 
+    line-height: 1.5em; 
+    font-weight: 400;  letter-spacing: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .footer-social-menu {
     width: 280px;
     padding: 3rem 0;
@@ -1066,8 +1100,6 @@ div.socialbutton
     width: 135px;
 }
 
-
-
 .navegacion
 {
     background: #f2efe8;
@@ -1075,6 +1107,7 @@ div.socialbutton
     border: none;
     border-radius: 0;
     border-bottom: 1px solid #B5B9BA;
+    margin: 0;
 }
 
 /* ==========================================================================
