@@ -1,5 +1,5 @@
 /**
- * Main JS file for Phantom
+ * Main JS file
  */
 var $post = $('.post'), 
     $first = $('.post.first'), 
@@ -37,35 +37,6 @@ var $post = $('.post'),
 
         })
         
-/*
-
-        $('.btn.first').click( function () {
-            srcTo ($first)
-        })
-        $('.btn.last').click( function () {
-            srcTo ($last)
-        })
-        $('#header-arrow').click(function () {
-            srcTo ($first)
-        })
-
-
-        $('.post-title').each(function () {
-            var t = $(this).text(),
-                index = $(this).parents('.post-holder').index();
-            $fnav.append("<a class='fn-item' item_index='"+index+"'>"+t+"</a>")
-
-            $('.fn-item').click(function () {
-                var i = $(this).attr('item_index'),
-                    s = $(".post[item_index='"+i+"']")
-
-                $('html, body').animate({
-                    scrollTop: s.offset().top
-                }, 400);
-
-            })
-        })
-*/
         $('.post.last').next('.post-after').hide();
         $(window).scroll( function () {
             var w = $(window).scrollTop(),

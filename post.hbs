@@ -1,12 +1,10 @@
 {{!< default}}
 
-{{! The comment above "< default" means - insert everything in this file into
-    the {body} of the default.hbs template, which contains our header/footer. }}
+{{! The comment above "< default" means - insert everything in this file into the {body} of the default.hbs template, which contains our header/footer. }}
+
 {{! The main content area on the homepage }}
+
 <main class="content" role="main">
-
-{{! Navigation for Small Screen }}
-
     <div class="back-to-home">
         <a href="{{@blog.url}}">
             <i class="fa fa-long-arrow-left fa-2x"></i>
@@ -44,7 +42,7 @@
             
         {{! Everything inside the #post tags pulls data from the post }}
 
-        <article class="{{post_class}}" style="padding-top: 30px;">  
+        <article class="{{post_class}}">  
         {{#post}}
 
         {{! Información sobre Post para el loop }}
@@ -62,59 +60,49 @@
             <meta property="fb:admins" content="mikenieva" />
         {{/contentFor}}
         
-         <header>                
-            <nav class="navbar navbar-default navegacion" role="navigation">
-                <div class="container-fluid" style="padding:0">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="text-align: center; width: auto; background-color: rgb(242, 239, 232); padding: 0px; margin: 0px; height: 1px;">
-      <ul class="nav navbar-nav navbar-left" style="
-    text-align: center;
-    background: #f2efe8;
-    width: 100%;
-">
+            <header>                
+                <nav class="navbar navbar-default navegacion" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse mobile" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-left">
+                                <li>
+                                    <a href="{{@blog.url}}/tag/liderar">
+                                        <span class="glyphicon glyphicon-fire"></span>&nbsp;&nbsp;Liderar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{@blog.url}}/tag/administrar"><span class="glyphicon glyphicon-tasks"></span>&nbsp;&nbsp;Administrar</a>
+                                </li>
+                                <li>
+                                    <a href="{{@blog.url}}/tag/negociar"><span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;Negociar
+                                        </a>
+                                </li>
+                                <li>
+                                    <a href="{{@blog.url}}/tag/experiencias"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;Experiencias
+                                        </a>
+                                </li>
+                                <li>
+                                    <a href="{{@blog.url}}/tag/libros"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;Libros
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
 
-  <li style="
-    font-size: 16px;
-    padding-left: 0;
-    margin-left: 0;
-"><a href="{{@blog.url}}/tag/liderar" style="
-    padding-left: 0;
-"><span class="glyphicon glyphicon-fire"></span>&nbsp;&nbsp;Liderar</a></li>
-  <li style="
-    font-size: 16px;
-    margin: 0;
-">
-<a href="{{@blog.url}}/tag/administrar"><span class="glyphicon glyphicon-tasks"></span>&nbsp;&nbsp;Administrar</a></li>
-  <li style="
-    font-size: 16px;
-    margin: 0;
-"><a href="{{@blog.url}}/tag/negociar"><span class="glyphicon glyphicon-comment"></span>&nbsp;&nbsp;Negociar</a></li>
-<li style="
-    font-size: 16px;
-    margin: 0;
-"><a href="{{@blog.url}}/tag/experiencias"><span class="glyphicon glyphicon-globe"></span>&nbsp;&nbsp;Experiencias</a></li>
-<li style="
-    font-size: 16px;
-    margin: 0;
-"><a href="{{@blog.url}}/tag/libros"><span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;Libros</a></li>
-
-
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-<div style="margin-bottom: 80px;margin-top: 20px;">
-    <div id="mc_embed_signup" class="mc_embed_signup" style=""> 
-        <form action="http://eatsy.us7.list-manage.com/subscribe/post?u=ed01cbcbb32aa86f232eb4854&amp;id=3c4fefee0d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="" _lpchecked="1" style="background: rgb(239, 239, 250);text-align: center;height: 52px;">
-            <div style="border-bottom: 1px solid #B5B9BA;padding-bottom: 25px;">
-                <p style="font-size: 1.4rem;margin: 0;display: inline-block;">
+                <div style="margin-bottom: 80px;margin-top: 20px;">
+                    <div id="mc_embed_signup" class="mc_embed_signup"> 
+                        <form action="http://eatsy.us7.list-manage.com/subscribe/post?u=ed01cbcbb32aa86f232eb4854&amp;id=3c4fefee0d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="" _lpchecked="1" style="background: rgb(239, 239, 250);text-align: center;height: 52px;">
+                            <div style="border-bottom: 1px solid #B5B9BA;padding-bottom: 25px;">
+                                <p style="font-size: 1.4rem;margin: 0;display: inline-block;">
                 Forma parte de nuestros lectores élite. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </p>
                 <div class="mc-field-group" style="display: inline-block;">
@@ -139,36 +127,44 @@
 </div>
 </header>
 
-            <section class="post-content">
-                    <div class="block-socialbuttons">
+<section class="post-content">
+    <div class="block-socialbuttons">
 
-                        <div class="socialbutton facebookbutton">
-                            <div class="fb-like" data-href="{{url}}" data-width="100px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-                        </div>
+        <!-- Facebook Like Button -->
 
-                        <div class="socialbutton twitterbutton">
-                            <a href="https://twitter.com/share" class="twitter-share-button" data-via="mikenieva">Tweet</a>
-                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-                                </script>
-                        </div>
+        <div class="socialbutton facebookbutton">
+            <div class="fb-like" data-href="{{url}}" data-width="100px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+        </div>
 
-                        <div class="socialbutton">
-                            <script src="//platform.linkedin.com/in.js" type="text/javascript">
-                                lang: en_US
-                            </script>
-                            <script type="IN/Share" data-counter="right"></script>
-                        </div>
+        <!-- Twitter Tweet Button -->
 
-                        <div class="socialbutton">
-                            <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-                            <g:plusone></g:plusone>
-                        </div>                         
+        <div class="socialbutton twitterbutton">
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="mikenieva">
+                Tweet
+            </a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                </script>
+        </div>
 
+        <!-- Linkedin Shace Button -->
 
-                    </div>
+        <div class="socialbutton">
+            <script src="//platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+            <script type="IN/Share" data-counter="right"></script>
+        </div>
 
-                    <img src="{{blog.url}}{{image}}">
-                {{content}}
+        <!-- Google Plus Button -->
+
+        <div class="socialbutton">
+            <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+            <g:plusone></g:plusone>
+        </div>                         
+    
+    </div>
+
+    <img src="{{blog.url}}{{image}}">
+    
+    {{content}}
 
 <div style="margin-bottom: 60px;margin-top: 80px;">
     <div id="mc_embed_signup" class="mc_embed_signup" style=""> 
@@ -214,11 +210,9 @@
                     </section> <!-- Discuss Comment End -->
                     
             </footer>
-
-                    
+          
             {{/post}}
     
         </article>        
     </div>
-
 </main>

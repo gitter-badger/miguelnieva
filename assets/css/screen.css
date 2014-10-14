@@ -1,16 +1,6 @@
-
-/******************************************/   
-/*    Theme   : Phantom +                                                                                */
-/*    Version : 1.0                                                                                             */
-/*    Author  : Codetic + Updated by Miguel Nieva for this project                   */
-/*    Website : http://www.codetic.net                                                             */ 
-/******************************************/  
-
-
 /* ==========================================================================
    Table of Contents
    ========================================================================== */
-
 /*
 
     0.  Includes
@@ -26,12 +16,6 @@
     10. Media Queries (Mobile)
 
  */
-
-/* ==========================================================================
-   0. Includes - Ground zero
-   ========================================================================== */
-
-@import url(normalize.css);
 
 
 /* ==========================================================================
@@ -292,6 +276,7 @@ blockquote {
 blockquote p {
     margin: 0.8em 0;
 }
+
 .quo {
     /*float: left;*/
     margin-right: 10px;
@@ -513,10 +498,6 @@ margin on the iframe, cause it breaks stuff. */
     background-attachment: fixed;
 }
 
-#site-head:after {
-
-}
-
 /****** Top toggle Menu ******/
 
 .top-toggle-menu {
@@ -643,9 +624,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 3rem;
     letter-spacing: -1px;
     font-weight: 600;
-}
-
-    
+}    
 
 .blog-description {
     margin: 0;
@@ -701,7 +680,11 @@ color: #fff;
     padding-bottom: 5px;
     background: #f2efe8;
     position: relative;
+}
 
+.post-holder article
+{
+    padding-top: 30px;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
@@ -711,7 +694,7 @@ color: #fff;
     max-width: 700px;
     margin: 0rem auto;
     padding-bottom: 4rem;
-    padding-top: 4rem;
+    padding-top: 30px;
     word-break: break-word;
     hyphens: auto;
 
@@ -1100,7 +1083,7 @@ div.socialbutton
     width: 135px;
 }
 
-.navegacion
+header nav.navegacion
 {
     background: #f2efe8;
     padding-bottom: 15px;
@@ -1108,6 +1091,47 @@ div.socialbutton
     border-radius: 0;
     border-bottom: 1px solid #B5B9BA;
     margin: 0;
+}
+
+header nav.navegacion div.container-fluid
+{
+    padding: 0;
+}
+
+header nav.navegacion div.container-fluid div.mobile
+{
+ text-align: center; 
+ width: auto; 
+ background-color: rgb(242, 239, 232); 
+ padding: 0px; 
+ margin: 0px; 
+ height: 1px;   
+}
+
+header nav.navegacion div.container-fluid div.mobile ul
+{
+    text-align: center;
+    background: #f2efe8;
+    width: 100%;   
+}
+
+header nav.navegacion div.container-fluid div.mobile ul li
+{
+    font-size: 16px;
+    padding-left: 0;
+    margin-left: 0; 
+}
+
+header nav.navegacion div.container-fluid div.mobile ul li a
+{
+    position: relative;
+    display: block;
+    padding: 15px 24px;
+}
+
+header nav.navegacion div.container-fluid div.mobile ul li a:first-child
+{
+    padding-left: 0;
 }
 
 /* ==========================================================================
@@ -1438,8 +1462,6 @@ color: black;
         display: none;
 
     }
-
-
 
     .post-holder {
         padding-top: 20px;
