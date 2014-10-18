@@ -277,12 +277,6 @@ blockquote p {
     margin: 0.8em 0;
 }
 
-.quo {
-    /*float: left;*/
-    margin-right: 10px;
-    margin-left: 10px;
-    font-size: 20px;
-}
 
 blockquote small {
     display: inline-block;
