@@ -12,49 +12,34 @@
         </a>    
     </div> <!-- Small Screen Navigation End -->
 
-    <div class='post-fixed-nav nav-page'>
-    	{{#if @blog.logo}}
+     <div class='post-fixed-nav nav-page'>
+      {{#if @blog.logo}}
         <a class="blog-logo-left" href="{{@blog.url}}">
             <img src="{{@blog.logo}}" alt="Logo" />
         </a>
         {{/if}}
         <h5>Miguel Nieva</h5>
-        <h2>Business Developers</h2>     
-        <hr>
-        <div class="post-sidebar">
-            <div class="tags">
-                <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/liderar">
-                    <span class="glyphicon glyphicon-fire">&nbsp;&nbsp;</span>
-                    Liderar
-                </a>
-                <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/experiencias">
-                    <span class="glyphicon glyphicon-globe">&nbsp;&nbsp;</span>
-                    Experiencias
-                </a>
-                <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/libros">
-                    <span class="glyphicon glyphicon-book">&nbsp;&nbsp;</span>
-                    Libros
-                </a>
-            </div>
-            <hr>
-            <a class="fn-item active" item_index="1" href="{{@blog.url}}/lectores-elite">
-                <span class="glyphicon glyphicon-envelope">&nbsp;&nbsp;</span>
-                Lectores Élite
-            </a>
+        <h2>Business Developers</h2>        
+        <div class="footer-social-menu">
+            <div class="footer-social-icons">
+                <a href="http://facebook.com/miguelnieva.com" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                <a href="http://twitter.com/mikenieva" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="http://mx.linkedin.com/in/miguelnieva/es" rel=”author” target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                <a href="http://google.com/+miguelnieva?rel=author" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+                <a href="http://github.com/miguelnieva" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                <a href="http://instagram.com/mikenieva" rel=”author” target="_blank"><i class="fa fa-instagram fa-2x"></i></a>      
+            </div> 
         </div>
-
-        {{! Social Menu }}
-       <div class="footer-social-menu">
-        <div class="footer-social-icons">
-            <a href="http://facebook.com/miguelnieva.com" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-            <a href="http://twitter.com/mikenieva" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-            <a href="http://mx.linkedin.com/in/miguelnieva/es" rel=”author” target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-            <a href="http://google.com/+miguelnieva?rel=author" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
-            <a href="http://github.com/miguelnieva" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-            <a href="http://instagram.com/mikenieva" rel=”author” target="_blank"><i class="fa fa-instagram fa-2x"></i></a>    
-        </div> 
-    </div>
-
+        <hr>
+        <div class="post-sidebar"> {{! Facebook Likebox }}   
+         <div class="tags">
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/liderar"><span class="glyphicon glyphicon-fire">&nbsp;&nbsp;</span>liderar</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/experiencias"><span class="glyphicon glyphicon-globe">&nbsp;&nbsp;</span>Experiencias</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/libros"><span class="glyphicon glyphicon-book">&nbsp;&nbsp;</span>Libros</a>
+        </div>
+        <hr>
+        <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fmiguelnieva.com&amp;width=270&amp;height=200&amp;colorscheme=dark&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=539759132770284" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:258px;" allowTransparency="true"></iframe>
+        </div>
     </div>
 
 

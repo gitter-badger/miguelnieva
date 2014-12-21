@@ -683,7 +683,7 @@ color: #fff;
 
 .post-tag
 {
-    margin-left: 5px;
+    margin-left: 0px;
 }
 
 .post-holder article
@@ -1016,6 +1016,10 @@ a.fn-item.active {
     color: #BBBBBB;
 }
 
+.tags
+{
+    margin: 2em 0;
+}
 
 /* The author credit area after the post */
 .post-footer {

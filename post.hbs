@@ -31,8 +31,14 @@
             </div> 
         </div>
         <hr>
-        <div class="post-sidebar"> {{! Facebook Likebox }}    
-        <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fmiguelnieva.com&amp;width=270&amp;height=400&amp;colorscheme=dark&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=539759132770284" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:258px;" allowTransparency="true"></iframe>
+        <div class="post-sidebar"> {{! Facebook Likebox }}   
+         <div class="tags">
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/liderar"><span class="glyphicon glyphicon-fire">&nbsp;&nbsp;</span>liderar</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/experiencias"><span class="glyphicon glyphicon-globe">&nbsp;&nbsp;</span>Experiencias</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/libros"><span class="glyphicon glyphicon-book">&nbsp;&nbsp;</span>Libros</a>
+        </div>
+        <hr>
+        <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fmiguelnieva.com&amp;width=270&amp;height=200&amp;colorscheme=dark&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=539759132770284" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:258px;" allowTransparency="true"></iframe>
         </div>
     </div>
 
@@ -61,36 +67,7 @@
         {{/contentFor}}
         
             <header>                
-                <nav class="navbar navbar-default navegacion" role="navigation">
-                    <div class="container-fluid">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        <div class="navbar-collapse collapse mobile" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-left">
-                                <li>
-                                    <a href="{{@blog.url}}/tag/liderar" target="_blank">
-                                        <span class="glyphicon glyphicon-fire">&nbsp;&nbsp;</span>Liderar
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{@blog.url}}/tag/experiencias" target="_blank"><span class="glyphicon glyphicon-globe">&nbsp;&nbsp;</span>Experiencias
-                                        </a>
-                                </li>
-                                <li>
-                                    <a href="{{@blog.url}}/tag/libros" target="_blank"><span class="glyphicon glyphicon-book">&nbsp;&nbsp;</span>Libros
-                                    </a>
-                                </li>
-                            </ul>
-                        </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                </nav>
-
+               
                 <div style="margin-bottom: 80px;margin-top: 20px;">
                     <div id="mc_embed_signup" class="mc_embed_signup"> 
                         <form action="http://eatsy.us7.list-manage.com/subscribe/post?u=ed01cbcbb32aa86f232eb4854&amp;id=3c4fefee0d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="" _lpchecked="1" style="background: rgb(239, 239, 250);text-align: center;height: 52px;">
