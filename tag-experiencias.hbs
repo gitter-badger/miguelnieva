@@ -1,0 +1,116 @@
+{{!< default}}
+
+{{#contentFor "meta"}}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{@blog.url}}" />
+    <meta property="og:title" content="Miguel Nieva - Business Developer" />
+    <meta property="og:site_name" content="{{@blog.title}}" />
+    {{#if @blog.logo}}<meta property="og:image" content="{{@blog.logo}}" />{{/if}}
+    <meta property="og:description" content="Reflexiones, ideas y opiniones sobre el ámbito del liderazgo, comunidades y negocios web."/>
+    <meta property="fb:profile_id" content="mikenieva" />
+    <meta property="fb:admins" content="mikenieva" />
+{{/contentFor}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+
+        {{! Navigation for Small Screen }}
+
+        <div class="back-to-home">
+            <a href="{{@blog.url}}"><i class="fa fa-long-arrow-left fa-2x"></i><h5>{{@blog.title}}</h5></a>
+            
+        </div> <!-- Small Screen Navigation End -->
+
+     <div class='post-fixed-nav'>
+      {{#if @blog.logo}}
+        <a class="blog-logo-left" href="{{@blog.url}}">
+            <img src="{{@blog.logo}}" alt="Logo" />
+        </a>
+        {{/if}}
+        <h5>Miguel Nieva</h5>
+        <h2>Business Developers</h2>        
+        <div class="footer-social-menu">
+            <div class="footer-social-icons">
+                <a href="http://facebook.com/miguelnieva.com" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                <a href="http://twitter.com/mikenieva" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="http://mx.linkedin.com/in/miguelnieva/es" rel=”author” target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                <a href="http://google.com/+miguelnieva?rel=author" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
+                <a href="http://github.com/miguelnieva" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                <a href="http://instagram.com/mikenieva" rel=”author” target="_blank"><i class="fa fa-instagram fa-2x"></i></a>      
+            </div> 
+        </div>
+        <hr>
+        <div class="post-sidebar"> {{! Facebook Likebox }}   
+         <div class="tags">
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/liderar"><span class="glyphicon glyphicon-fire">&nbsp;&nbsp;</span>liderar</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/experiencias"><span class="glyphicon glyphicon-globe">&nbsp;&nbsp;</span>Experiencias</a>
+        <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/libros"><span class="glyphicon glyphicon-book">&nbsp;&nbsp;</span>Libros</a>
+        </div>
+        <hr>
+        <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fmiguelnieva.com&amp;width=270&amp;height=200&amp;colorscheme=dark&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=539759132770284" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:258px;" allowTransparency="true"></iframe>
+        </div>
+    </div>
+
+    {{! Each post will be output using this markup }}
+
+    <div class='post-holder'>    
+           <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
+          
+        {{! Everything inside the #post tags pulls data from the post }}
+
+        <article class="{{post_class}}">
+
+<div style="margin-bottom: 60px;margin-top: 20px;">
+    <div id="mc_embed_signup" class="mc_embed_signup" style=""> 
+        <form action="http://eatsy.us7.list-manage.com/subscribe/post?u=ed01cbcbb32aa86f232eb4854&amp;id=3c4fefee0d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="" _lpchecked="1" style="background: rgb(239, 239, 250);text-align: center;height: 52px;">
+            <div style="padding-bottom: 25px;">
+                <p style="font-size: 1.4rem;margin: 0;display: inline-block;">
+                Forma parte de nuestros lectores élite. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </p>
+                <div class="mc-field-group" style="display: inline-block;">
+                    <a href="{{blog.url}}/lectores-elite/" target="_blank">
+                        <input class="btn btn-danger enviar" value="Suscribirme" name="subscribe" id="mc-embedded-subscribe" style="display: inline-block;background: #6CC4E2;border-color: #6CC4E2;">
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+          <h3>Viajar, conocer, aprender.</h3>
+          <p>El mundo es inmenso. Muchos lugares, talento, retos.</p> 
+          <p>He conocido personas increíbles y podido vivir muchas experiencias que me han permitido crecer no sólo profesionalmente, sino también de forma personal.</p>
+          <p>En esta área, escribo mis apreciaciones sobre diversos momentos de vida.</p>
+        <hr>
+            {{#foreach posts}}
+         <div class='post-holder post-tag'>
+        
+            {{#if @first}}
+                <article class="{{post_class}} first">
+            {{else}}
+                {{#if @last}}
+                    <article class="{{post_class}} last">
+                {{else}}
+                    <article class="{{post_class}}">
+                {{/if}}
+            {{/if}}
+        
+         <header class="post-header">                
+                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                <div class="post-meta"><i class="fa fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}} </time></div>
+
+
+         </header>
+
+        </article>
+        <div class='post-after'></div>
+    </div>
+
+    {{/foreach}}
+
+        </article>        
+    </div>
+</main>
