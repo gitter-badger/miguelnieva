@@ -85,28 +85,34 @@
 
           <h3>El liderazgo es una decisión, no un rango</h3>
           <p>El mundo está en una crisis de liderazgo.</p>
-          <p>Es increíble la escasa actitud de tomar responsabilidad de nuestros equipos y generar una visión en conjunto. Confiar, delegar y crecer en un mismo círculo.</p>
           <p>Necesitamos más personas con propuesta, que den el paso, que no se paralicen por los retos que pueda concebir un emprendimiento, un puesto, un problema.</p> 
-          <p><b>Hoy, dirigir es una necesidad mundial.</b> Un tema tan complejo pero necesario en muchas empresas, familias y vida personal.</p>
+          <p><b>Hoy, dirigir es una necesidad mundial.</b> Un tema tan complejo pero importante en muchas empresas, familias y vida personal.</p>
           
 <hr>
 
             {{#foreach posts}}
          <div class='post-holder post-tag'>
-        
+                
             {{#if @first}}
+                 <img src="{{image absolute="true"}}" style="width:100%;">
                 <article class="{{post_class}} first">
+                    
             {{else}}
                 {{#if @last}}
+                    <img src="{{image absolute="true"}}" style="width:100%;">
                     <article class="{{post_class}} last">
+                        
                 {{else}}
-                    <article class="{{post_class}}">
+                        <img src="{{image absolute="true"}}" style="width:100%;">
+                        <article class="{{post_class}}">
                 {{/if}}
             {{/if}}
         
-         <header class="post-header">                
+         <header class="post-header">   
+
                 <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
                 <div class="post-meta"><i class="fa fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}} </time></div>
+
 
 
          </header>
