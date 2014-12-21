@@ -30,7 +30,7 @@
         <h2>Business Developers</h2>     
         <hr>
         <div class="post-sidebar">
-        <div class="tags">
+            <div class="tags">
         <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/liderar"><span class="glyphicon glyphicon-fire">&nbsp;&nbsp;</span>liderar</a>
         <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/experiencias"><span class="glyphicon glyphicon-globe">&nbsp;&nbsp;</span>Experiencias</a>
         <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/libros"><span class="glyphicon glyphicon-book">&nbsp;&nbsp;</span>Libros</a>
@@ -57,12 +57,108 @@
     {{! Each post will be output using this markup }}
 
     <div class='post-holder'>    
-            
+           <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
+          
         {{! Everything inside the #post tags pulls data from the post }}
 
-        <article class="{{post_class}}">  
+        <article class="{{post_class}}">
+
+          <h3>Leer te hará mejor profesional</h3>
+          <p>Los libros nos hacen fuertes intelectualmente, nos dan una mejor brújula para decidir y perspectiva más equilibrada en cualquier situación.</p> 
+          <p>Te invito a conocer mis diversos análisis, sobre libros de clase mundial, que están dirigiendo el futuro de la humanidad.</p>
+          <style type="text/css" media="screen">
+  .gr_custom_container_1419102277 {
+    /* customize your Goodreads widget container here*/
+border-radius: 10px;
+padding: 10px 5px 30px 5px;
+width: 100%;
+  }
+
+  .gr_custom_container_1419102277 a
+  {
+    text-decoration: none;
+  }
+
+
+  .gr_custom_container_1419102277 a:hover
+  {
+    color: #4091AE;
+  }
+
+
+  .gr_custom_container_1419102277 center
+  {
+    display:none;
+  }
+
+  .gr_custom_container_1419102277 br
+  {
+    display: none;
+  }
+
+  .gr_custom_header_1419102277 {
+    /* customize your Goodreads header here*/
+    border-bottom: 1px solid #166A87;
+    width: 100%;
+    text-align: left;
+    font-size: 120%;
+    color: #428bca;
+    padding: 20px 0 30px !important;
+    margin: 0 0 30px !important;
+  }
+  
+
+  .gr_custom_each_container_1419102277 {
+    /* customize each individual book container here */
+    width: 100%;
+    clear: both;
+    margin: 0px 0 !important;
+    padding: 27px 0 0px !important;
+    overflow: auto;
+    
+  }
+
+
+
+  .gr_custom_book_container_1419102277 {
+    /* customize your book covers here */
+    overflow: hidden;
+      float: left;
+      margin-right: 20px;
+      border: solid 4px white;
+  }
+
+  .gr_custom_book_container_1419102277 img
+  {
+    margin: 0 !important;
+  }
+  .gr_custom_author_1419102277 {
+    /* customize your author names here */
+    font-size: 10px;
+  }
+  .gr_custom_tags_1419102277 {
+    /* customize your tags here */
+    font-size: 10px;
+    color: gray;
+  }
+  .gr_custom_rating_1419102277 {
+    /* customize your rating stars here */
+    float: right;
+  }
+</style>
+
+<script src="https://www.goodreads.com/review/custom_widget/8262869.%C2%BFQu%C3%A9%20estoy%20leyendo%20en%20este%20momento%3F?cover_position=left&cover_size=small&num_books=10&order=d&shelf=currently-reading&show_author=1&show_cover=1&show_rating=0&show_review=0&show_tags=0&show_title=1&sort=date_added&widget_bg_color=FFFFFF&widget_bg_transparent=&widget_border_width=1&widget_id=1419102277&widget_text_color=000000&widget_title_size=medium&widget_width=medium" type="text/javascript" charset="utf-8"></script>    
+
+<h2 style="border-bottom: 1px solid #166A87;
+width: 100%;
+text-align: left;
+font-size: 120%;
+padding: 20px 0 30px !important;
+margin: 0 0 30px !important;">Análisis y reflexiones<h2>
+
+
             {{#foreach posts}}
-    <div class='post-holder'>
+         <div class='post-holder post-tag'>
         
             {{#if @first}}
                 <article class="{{post_class}} first">
@@ -77,11 +173,9 @@
          <header class="post-header">                
                 <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
                 <div class="post-meta"><i class="fa fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}} </time></div>
-         </header>
 
-            <section class="post-excerpt">
-            <p>{{excerpt characters="140"}} ... <a href="{{url}}" class="read-more">Leer más...</a></p>
-         </section>
+
+         </header>
 
         </article>
         <div class='post-after'></div>

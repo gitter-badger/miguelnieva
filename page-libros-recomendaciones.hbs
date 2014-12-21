@@ -4,6 +4,7 @@
     the {body} of the default.hbs template, which contains our header/footer. }}
 
 {{! The main content area on the homepage }}
+
 <main class="content" role="main">
     <div class="back-to-home">
         <a href="{{@blog.url}}">
@@ -26,6 +27,14 @@
                 <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/liderar">
                     <span class="glyphicon glyphicon-fire">&nbsp;&nbsp;</span>
                     Liderar
+                </a>
+                <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/administrar">
+                    <span class="glyphicon glyphicon-tasks">&nbsp;&nbsp;</span>
+                    Administrar
+                </a>
+                <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/negociar">
+                    <span class="glyphicon glyphicon-comment">&nbsp;&nbsp;</span>
+                    Negociar
                 </a>
                 <a class="fn-item active" item_index="1" href="{{@blog.url}}/tag/experiencias">
                     <span class="glyphicon glyphicon-globe">&nbsp;&nbsp;</span>
@@ -66,7 +75,7 @@
 
         <article class="{{post_class}}">
 
-        {{#post}}
+       {{#post}}
 
              {{#contentFor "meta"}}
                     <meta property="og:type" content="website" />
@@ -81,7 +90,34 @@
             <h1 class="page-title">{{{title}}}</h1>
             
             <section class="post-content">
+                <div class="block-socialbuttons">
+                    <hr style="border-top: 1px solid #B5B9BA;">
+                        <div class="socialbutton facebookbutton">
+                            <div class="fb-like" data-href="{{url}}" data-width="100px" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                        </div>
+
+                        <div class="socialbutton twitterbutton">
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-via="mikenieva">Tweet</a>
+                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                                </script>
+                        </div>
+
+                        <div class="socialbutton">
+                            <script src="//platform.linkedin.com/in.js" type="text/javascript">
+                                lang: en_US
+                            </script>
+                            <script type="IN/Share" data-counter="right"></script>
+                        </div>
+
+                        <div class="socialbutton">
+                            <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+                            <g:plusone></g:plusone>
+                        </div>                         
+                    </div>
+
+   
                 {{content}}
+
             </section>
 
             {{/post}}
@@ -89,4 +125,4 @@
         </article>   
 
     </div>
-</main>
+</main>      
