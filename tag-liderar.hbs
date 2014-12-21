@@ -94,15 +94,18 @@
          <div class='post-holder post-tag'>
                 
             {{#if @first}}
-                 <img src="{{image absolute="true"}}" style="width:100%;">
+                <a href="{{url}}">
+                <img src="{{image absolute="true"}}" style="width:100%;">
                 <article class="{{post_class}} first">
                     
             {{else}}
                 {{#if @last}}
+                    <a href="{{url}}">
                     <img src="{{image absolute="true"}}" style="width:100%;">
                     <article class="{{post_class}} last">
                         
                 {{else}}
+                    <a href="{{url}}">
                         <img src="{{image absolute="true"}}" style="width:100%;">
                         <article class="{{post_class}}">
                 {{/if}}
@@ -110,7 +113,7 @@
         
          <header class="post-header">   
 
-                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                <h2 class="post-title">{{{title}}}</h2></a>
                 <div class="post-meta"><i class="fa fa fa-calendar"></i>&nbsp;&nbsp;&nbsp;<time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}} </time></div>
 
 
