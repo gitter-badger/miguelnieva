@@ -91,41 +91,23 @@
 <hr>
 
             {{#foreach posts}}
-         <div class='post-holder post-tag' style="margin-left: 0;
-display: inline-block;
-width: 49%;
-vertical-align: top;
-color: rgb(255, 255, 255);
-background: black;
-padding-top: 0px;">
-                
-            {{#if @first}}
-                <a href="{{url}}">
-                <img src="{{image absolute="true"}}" style="width:100%;">
-                <article class="{{post_class}} first">
-                    
-            {{else}}
-                {{#if @last}}
-                    <a href="{{url}}">
-                    <img src="{{image absolute="true"}}" style="width:100%;">
-                    <article class="{{post_class}} last">
-                        
-                {{else}}
-                    <a href="{{url}}">
+            <div class="" style="margin-left: 0px;  width: 100%; vertical-align: top; padding-top: 0px; color: rgb(255, 255, 255); display: block;margin-bottom: 50px;">
+                <div style="display: inline-block;width: 30%;padding: 5px;background: white;">
+                    <a href="{{url}}" style="display: inline-block;">
                         <img src="{{image absolute="true"}}" style="width:100%;">
-                        <article class="{{post_class}}">
-                {{/if}}
-            {{/if}}
-        
-         <header class="post-header">   
+                    </a>
+                </div>
+                <article class="post tag-liderar" style="display: inline-block;width: 65%;padding: 0;vertical-align: top;padding: 0 15px;">
+                    <a href="{{url}}"></a>
+                        <header class="post-header">
+                            <h2 class="post-title" style="font-size: 23px;">{{{title}}}</h2>
+                        </header>
+                        <p style="color:black; font-size:14px;"><span class="glyphicon glyphicon-tag">&nbsp;</span>{{date published_at format="MMMM DD, YYYY"}}</p>
+                    </a>
+                </article>
+            </div>            
 
-                <h2 class="post-title" style="font-size: 16px;">{{{title}}}</h2></a>
-         </header>
-
-        </article>
-    </div>
-
-    {{/foreach}}
+            {{/foreach}}
 
         </article>        
     </div>
